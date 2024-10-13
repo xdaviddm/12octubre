@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection{
+  background-color: rgba(100, 2, 2, 0.631);
+}
+p{
+  width: 70%;
+  margin: 0 auto;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+p::before, p::after{
+  content: "" ;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(255, 0, 0);
+  display: block; 
+}
+h1{
+  text-align: center;
+  color: blue;
+}
+
+
+.enlace{
+  display: block;
+  background-color: rgb(92, 0, 0);
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  border-bottom: solid 3px black;
+  transition: 0.5s;
+}
+
+.enlace:link{
+
+background-color: blanchedalmond;
+color: black;
+
+}
+.enlace.visited{
+  background-color: aquamarine;
+
+
+}
+.enlace:hover{
+  background-color: black;
+}
+
+
+
