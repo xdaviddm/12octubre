@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color_primario: #f6e231;
+  --color_secundario: #2a2929;
+  --tamanio_fuente: 18px;
+  --maximo_ancho: 1200px;
+  --color_blanco: #c2c2c2;
+  --alto_nav: 80px;
+}
+
+::selection {
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--tamanio_fuente);
+  background-color: var(--color_secundario);
+  color: var(--color_blanco);
+}
+
+header {
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
+section {
+}
+
+.contenedor {
+  width: 100%;
+  max-width: var(--maximo_ancho);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.h-100 {
+  height: calc(100vh - var(--alto_nav));
+}
+
+/*nav {
+  height: 70px;
+}*/
+
+.nav__contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__lista {
+  height: 70px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Logo {
+  width: 60px;
+  height: 50px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--color_secundario);
+  font-weight: bold;
+}
+
+.Logo1 {
+  width: 500px;
+  height: 500px;
+}
+
+/*principal vamos a trabajar en la parte principal*/
+
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo1 {
+  order: 1;
+  flex-basis: 45%;
+}
+
+.contenedor_textos {
+  order: 0;
+  flex-basis: 50%;
+}
+
+.titulo {
+  font-size: 48px;
+  font-weight: 700px;
+}
+
+.parrafo {
+  margin: 20px;
+  font-weight: 300px;
+  font-size: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+.Logo2 {
+  height: 500px;
+  width: 600px;
+}
+
+.Logo3 {
+  height: 500px;
+  width: 600px;
+}
+
+.Logo4 {
+  height: 500px;
+  width: 600px;
+}
+
+.btn--negro {
+  background-color: var(--color_secundario);
+  color: var(--color_blanco);
+}
+/***********Servicios************/
+
+.text-center {
+  text-align: center;
+}
+
+.Servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card__item {
+  max-width: 350px;
+  width: 30%;
+  box-shadow: 0 0 5px (0, 0, 0, 5);
+  text-align: center;
+  background-color: var(--color_blanco);
+  color: var(--color_secundario);
+  padding: 40px 0;
+  border-radius: 10px; /*para darle borde a los objetos*/
+}
+
+.card__item--activo {
+  background-color: var(--color_primario);
+}
+
+.card__plan {
+  margin-bottom: 20px;
+}
+
+.card__precio {
+  font-size: 3rem;
+}
+
+.card__caracteristicas {
+  margin-bottom: 25px;
+}
